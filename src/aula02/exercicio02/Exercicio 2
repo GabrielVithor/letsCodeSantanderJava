@@ -1,0 +1,28 @@
+Criar um Sistema de Educação a Distância
+
+Criar a classe Pessoa
+
+criar a propriedade nome
+Criar as classes Aluno e Professor que deverão estender Pessoa
+
+Criar a classe Turma, que terá:
+
+Um professor
+Uma lista de alunos
+Criar a classe Sistema
+
+implementar um método que inclua alunos em uma turma
+implementar o método main
+Criar uma turma e colocar 1 professor e 3 alunos na turma
+Criar as classes AlunoJava e AlunoJS que estendem Aluno
+
+Fazer com que a classe Turma seja genérica em relação aos alunos
+
+Fazer com o método de incluir alunos em uma Turma seja genérico
+
+Criar duas turmas, uma para Java e outra para JavaScript e populá-las com 1 professor e 3 alunos
+
+Imprimir as turmas com os alunos em ordem alfabética.
+
+Implementar a interface genérica Comparable na classe Pessoa.
+javadoc 17 Comparable
