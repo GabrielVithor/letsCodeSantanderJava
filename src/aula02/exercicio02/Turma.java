@@ -24,7 +24,7 @@ public class Turma<T extends Aluno>{
         return listaAlunos;
     }
 
-    public void inserirAlunoTurma(Turma turma,T... alunos) {
+    public void inserirAlunoTurma(Turma<T> turma,T... alunos) {
         for (T aluno : alunos) {
             turma.setListaAlunos(aluno);
         }

@@ -1,8 +1,6 @@
 package aula02.exercicio02;
 
 public class Sistema{
-
-
     public static void main(String[] args) {
         AlunoJava aluno1 = new AlunoJava("Gabriel","123456789");
         AlunoJava aluno2 = new AlunoJava("Vithor","987654321");

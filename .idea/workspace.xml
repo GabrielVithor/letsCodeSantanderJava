@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1289c94-4d17-4ba6-934b-37a91d9872b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/AlunoJS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/AlunoJava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/Exercicio 2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/Professor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/Sistema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/Turma.java" afterDir="false" />
+    <list default="true" id="c1289c94-4d17-4ba6-934b-37a91d9872b3" name="Changes" comment="Exercico 2 - Orientação a Objetos 2">
+      <change afterPath="$PROJECT_DIR$/src/aula01/appChat/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula01/appChat/ChatAplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula01/appChat/Participante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula01/appChat/Professor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula01/appChat/Sala.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula01/exemplorBanco/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula01/exemplorBanco/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula02/exercicio02/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula02/exercicio02/Sistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula02/exercicio02/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula02/exercicio02/Turma.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,7 +45,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/workspace/Java DIO/introducao-ao-java/JAVA DIO/src/collectionsFrameworks/list"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/workspace/letsCode/javaOrientadoObjeto2"
   }
 }]]></component>
   <component name="RunManager" selected="Application.aula02.exercicio02.Sistema">
@@ -101,6 +106,28 @@
       <option name="presentableId" value="Default" />
       <updated>1671489246886</updated>
     </task>
+    <task id="LOCAL-00001" summary="Exercico 2 - Orientação a Objetos 2">
+      <created>1672624241552</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672624241552</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Exercico 2 - Orientação a Objetos 2">
+      <created>1672624364372</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672624364372</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Exercico 2 - Orientação a Objetos 2">
+      <created>1672624372022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672624372022</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +140,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Exercico 2 - Orientação a Objetos 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercico 2 - Orientação a Objetos 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

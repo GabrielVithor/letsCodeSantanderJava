@@ -1,8 +1,9 @@
 package aula01.exemplorBanco;
 
 public class Usuario {
-    String nome;
-    String sobrenome;
+    private String nome;
+    private String sobrenome;
+    private String login;
     Conta conta;
     Poupanca poupanca;
 
