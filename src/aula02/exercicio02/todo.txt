@@ -1,0 +1,14 @@
+Sistema de educação a distancia parte 2
+- Criar uma classe Seecretaria que criará duas turmas ( Java e JS)
+    -Criar o metodo matricula() - responsavel por popular as turmas [professor e alunos]
+    -Criar o metodo getAlunoInfo() que retornará um String contendo os dados do aluno
+    -Criar o metodo que listara os alunos na ordem alfabetica(Comparabable);
+    -Criar o metodo que listara os alunos na ordem de matricula (Comparator);
+    -A lista retornada nos dois metodos anteriores devera retornar uma lista de Strings contendo o resultado
+    do metodo getAluno
+
+    - O metodo main devera chamar o metodo matricula da Secretaria para inicializar o sistema
+
+    -Criar a classe Supervisao, que terá o metodo analisaFrequencia que utiliza o metodo de ordem alfabetica
+    -Criar a classe Pedagico, que terá o metodo analisaEvolucaoAcademica que utiliza o metodo com a lista
+    ordenada por matricula

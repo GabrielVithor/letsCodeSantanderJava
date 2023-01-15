@@ -1,5 +1,4 @@
-package aula02.exercicio02;
-
+package aula02.exercicio02.controller;
 public class Pessoa <T extends Aluno> implements Comparable<T>{
     private String nome;
     private String cpf;
