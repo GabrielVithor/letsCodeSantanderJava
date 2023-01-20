@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1289c94-4d17-4ba6-934b-37a91d9872b3" name="Changes" comment="Review aula 2">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LSP/SistemaGeral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/controller/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/controller/Pedagocio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/controller/Secretaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/controller/Supervisao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/model/BD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula02/exercicio02/todo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula03/chatApplication/Aluno2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula03/chatApplication/ChatApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula03/chatApplication/Participante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula03/chatApplication/Sala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula03/srp/SRP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/formasGeometricas/Retangulo.java" afterDir="false" />
+    <list default="true" id="c1289c94-4d17-4ba6-934b-37a91d9872b3" name="Changes" comment="livraria 1.0">
+      <change afterPath="$PROJECT_DIR$/src/livraria/AlbunsMusica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Brinquedos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Caixa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Desconto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Estoque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/EstoqueGeral.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Filmes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/IEstoque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Jogos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Livro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Sistema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/todo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula01/appChat/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula01/appChat/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula01/appChat/Participante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula01/appChat/Participante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula02/exercicio02/Aluno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula02/exercicio02/AlunoJS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula02/exercicio02/controller/AlunoJS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula02/exercicio02/AlunoJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula02/exercicio02/controller/AlunoJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula02/exercicio02/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula02/exercicio02/controller/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula02/exercicio02/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula02/exercicio02/controller/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula02/exercicio02/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula02/exercicio02/Sistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula02/exercicio02/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula02/exercicio02/controller/Turma.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673408866394</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Review aula 3">
+      <created>1673760170926</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673760170926</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,7 +179,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exercico 2 - Orientação a Objetos 2" />
     <MESSAGE value="Review aula 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Review aula 2" />
+    <MESSAGE value="Review aula 3" />
+    <MESSAGE value="livraria 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="livraria 1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
