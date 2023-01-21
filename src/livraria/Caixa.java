@@ -1,5 +1,8 @@
 package livraria;
 
+import livraria.estoque.Estoque;
+import livraria.produtos.Produto;
+
 public class Caixa <T extends Produto>{
     private Double saldo = 0d;
 

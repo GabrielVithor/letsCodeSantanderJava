@@ -1,4 +1,6 @@
-package livraria;
+package livraria.estoque;
+
+import livraria.produtos.Produto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,4 +29,6 @@ public class Estoque<T extends Produto> implements IEstoque<T> {
     public List<T> getEstoque() {
         return estoque;
     }
+
+
 }

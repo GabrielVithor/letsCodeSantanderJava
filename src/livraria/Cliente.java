@@ -1,5 +1,7 @@
 package livraria;
 
+import livraria.estoque.Estoque;
+
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -19,4 +21,6 @@ public class Cliente {
     public boolean verificaMaiorIdade(){
         return LocalDate.now().getYear() - dataNascimento.getYear() >= 18;
     }
+
+
 }

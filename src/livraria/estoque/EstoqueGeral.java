@@ -1,12 +1,16 @@
-package livraria;
+package livraria.estoque;
+
+import livraria.produtos.Produto;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class EstoqueGeral implements IEstoque<Produto> {
-    Map<String, List<Produto>> estoqueGeral = new HashMap<>();
+
+
+public class EstoqueGeral<T extends Produto> implements IEstoque<T> {
+    Map<String, List<T>> estoqueGeral = new HashMap<>();
     private static EstoqueGeral singleton = null;
 
     private EstoqueGeral() {
@@ -20,7 +24,7 @@ public class EstoqueGeral implements IEstoque<Produto> {
     }
 
     @Override
-    public void adicionar(Produto produto) {
+    public void adicionar(T produto) {
         if(estoqueGeral.containsKey(produto.getCategoria())){
             estoqueGeral.get(produto.getCategoria()).add(produto);
         }else{
@@ -29,23 +33,30 @@ public class EstoqueGeral implements IEstoque<Produto> {
     }
 
     @Override
-    public void remover(Produto produto) {
+    public void remover(T produto) {
         estoqueGeral.get(produto.getCategoria()).remove(produto);
     }
 
     @Override
-    public void ver(Produto produto) {
+    public void ver(T produto) {
         System.out.println(estoqueGeral.get(produto.getCategoria()).indexOf(produto));
     }
 
     @Override
-    public void alterar(Produto produtoAtual, Produto produtoNovo) {
-        List<Produto> produtos = estoqueGeral.get(produtoAtual.getCategoria());
+    public void alterar(T produtoAtual, T produtoNovo) {
+        List<T> produtos = estoqueGeral.get(produtoAtual.getCategoria());
         produtos.set(produtos.indexOf(produtoAtual),produtoNovo);
         estoqueGeral.put(produtoAtual.getCategoria(),produtos);
     }
 
-    public Map<String, List<Produto>> getEstoqueGeral() {
+    public Map<String, List<T>> getEstoqueGeral() {
         return estoqueGeral;
+    }
+
+    @Override
+    public String toString() {
+        return "EstoqueGeral{" +
+                "estoqueGeral=" + estoqueGeral +
+                '}';
     }
 }
