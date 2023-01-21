@@ -32,7 +32,7 @@ Você deve ser capaz de ver quantos itens de um tipo específico existem no esto
 Você deve ser capaz de ver a listagem completa dos itens em estoque.
 Você deve ser capaz de ver a listagem dos itens em estoque por categoria.
 Você deve ser capaz de realizar a operação de compra, ao realizar esta operação os produtos comprados são
- removidos do estoque e o dinheiro pago deve ser adicionado ao caixa.
+removidos do estoque e o dinheiro pago deve ser adicionado ao caixa.
 Segunda Etapa:
 Duas mudanças de escopo foi solicitada com urgência. Agora um produto pode ser adicionado com um rótulo:
 destinado ao público adulto. Neste caso para que a compra do produto seja realizada será necessária a apresentação

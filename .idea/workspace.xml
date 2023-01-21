@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1289c94-4d17-4ba6-934b-37a91d9872b3" name="Changes" comment="livraria 1.1">
-      <change afterPath="$PROJECT_DIR$/src/livraria/Estoquista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/estoque/Carrinho.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/produtos/Jogo.java" afterDir="false" />
+    <list default="true" id="c1289c94-4d17-4ba6-934b-37a91d9872b3" name="Changes" comment="livraria 2.0">
+      <change afterPath="$PROJECT_DIR$/src/livraria/repositorios/Almoxarifado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/repositorios/Carrinho.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/repositorios/Estoque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/livraria/repositorios/IEstoque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/AlbunsMusica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/produtos/AlbunsMusica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/Brinquedos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/produtos/Brinquedos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/Caixa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Caixa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/Desconto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Desconto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/estoque/Estoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/EstoqueGeral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/estoque/EstoqueGeral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/Filmes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/produtos/Filmes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/IEstoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/estoque/IEstoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/Jogos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/produtos/Livro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/produtos/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/Estoquista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Estoquista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Sistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/estoque/Carrinho.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/estoque/Estoque.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/estoque/EstoqueGeral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/estoque/IEstoque.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/todo" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/todo" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +47,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/workspace/letsCode/javaOrientadoObjeto2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/workspace/Java DIO/introducao-ao-java/JAVA DIO/src/collectionsFrameworks"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Sistema">
     <configuration name="Sistema (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="livraria.Sistema" />
@@ -85,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sistema (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Sistema (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="livraria.Sistema" />
       <module name="javaOrientadoObjeto2" />
       <extension name="coverage">
@@ -98,7 +95,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sistema (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Sistema" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="livraria.Sistema" />
+      <module name="javaOrientadoObjeto2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="livraria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sistema" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="livraria.Sistema" />
+      <module name="javaOrientadoObjeto2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="livraria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sistema" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="livraria.Sistema" />
+      <module name="javaOrientadoObjeto2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="livraria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sistema" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="livraria.Sistema" />
       <module name="javaOrientadoObjeto2" />
       <extension name="coverage">
@@ -127,10 +163,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Sistema" />
+        <item itemvalue="Application.Sistema (4)" />
+        <item itemvalue="Application.Sistema (3)" />
         <item itemvalue="Application.Sistema (2)" />
         <item itemvalue="Application.Sistema (1)" />
-        <item itemvalue="Application.Sistema (5)" />
-        <item itemvalue="Application.Sistema (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674194492658</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="livraria 2.0">
+      <created>1674267695447</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674267695447</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,7 +248,8 @@
     <MESSAGE value="Review aula 3" />
     <MESSAGE value="livraria 1.0" />
     <MESSAGE value="livraria 1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="livraria 1.1" />
+    <MESSAGE value="livraria 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="livraria 2.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

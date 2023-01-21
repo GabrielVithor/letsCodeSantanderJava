@@ -1,11 +1,16 @@
 package livraria;
 
-import livraria.estoque.Estoque;
+import livraria.repositorios.Estoque;
 import livraria.produtos.*;
+
+import java.time.LocalDate;
+
+import static livraria.Estoquista.*;
 
 
 public class Sistema<T extends Produto> {
     public static void main(String[] args) {
+        Caixa caixa = Caixa.abrirCaixa();
 
         AlbunsMusica albunsMusica = new AlbunsMusica("Hillsong",
                 10.00d,
@@ -73,15 +78,28 @@ public class Sistema<T extends Produto> {
                 adicionar(livro2);
             }
         };
-        Estoquista estoquista = new Estoquista("Gabriel");
 
-        estoquista.listarProdutos();
-        estoquista.listarProdutosPorCategoria(Produtos.AlbunsMusica);
-        estoquista.mostrarQuantidadePorCategoria(Produtos.Livro);
-        albunsMusicaEstoque.alterar(albunsMusica,albunsMusica2);
+        Cliente cliente = new Cliente("Gabriel",
+                "123456789",
+                "1234567900",
+                LocalDate.of(1999,01,26));
 
-        estoquista.listarProdutosPorCategoria(Produtos.AlbunsMusica);
+        listarProdutosPorCategoria(Produtos.Livro);
+        cliente.selecionarProduto(livro);
+        cliente.selecionarProduto(albunsMusica);
+        cliente.selecionarProduto(albunsMusica2);
+        listarProdutosPorCategoria(Produtos.Livro);
+        cliente.mostrarCarrinho();
+        cliente.cancelarProduto(livro);
+        cliente.cancelarProduto(livro);
+        listarProdutosPorCategoria(Produtos.Livro);
 
+        caixa.mostrarCaixa();
+        cliente.mostrarPedido();
+        cliente.concluirCompra();
+        cliente.mostrarPedido();
+        caixa.mostrarCaixa();
+        listarProdutos();
     }
 };
 

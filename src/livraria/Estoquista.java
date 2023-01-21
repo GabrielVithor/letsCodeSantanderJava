@@ -1,47 +1,41 @@
 package livraria;
-
-import livraria.estoque.Estoque;
-import livraria.estoque.EstoqueGeral;
+import livraria.repositorios.Almoxarifado;
 import livraria.produtos.Produto;
-
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Estoquista{
-    String nome;
-    Map<String, List> estoqueGeral;
-    private static EstoqueGeral singleton = null;
+public class Estoquista {
 
-    public Estoquista(String nome) {
-        this.nome = nome;
-        this.singleton = EstoqueGeral.getInstance();
-        this.estoqueGeral = singleton.getEstoqueGeral();
+    private static Almoxarifado singleton = Almoxarifado.getAlmoxarifado();
+    private static Map<String, List> estoqueGeral = singleton.getEstoqueGeral();
+
+    private Estoquista(){
+
     }
 
-    private Map<String, List> getEstoqueGeral() {
-        return estoqueGeral;
-    }
-
-    public List listarProdutosPorCategoria(Enum categoria){
+    public static List listarProdutosPorCategoria(Enum categoria){
         System.out.println(estoqueGeral.get(categoria.name()));
         return estoqueGeral.get(categoria.name());
     };
 
-    public  Map<String,List> listarProdutos(){
+    public static Almoxarifado getEstoqueGeral() {
+        return singleton;
+    }
+
+    public static Map<String,List> listarProdutos(){
         System.out.println(estoqueGeral);
         return estoqueGeral;
     };
 
-    public  Integer mostrarQuantidadePorCategoria(Enum categoria){
+    public  static Integer mostrarQuantidadePorCategoria(Enum categoria){
         Integer quantidadeCategoria =  estoqueGeral.get(categoria.name()).size();
         System.out.println(quantidadeCategoria);
         return quantidadeCategoria;
     }
-
-    public void comprarProduto(Estoque<T> estoque, T produto) {
-        estoque.remover(produto);
-        this.saldo += produto.getPreco();
+    public static <T extends Produto> Integer getQuantidadeProduto(T produto){
+        Integer quantidadeCategoria = singleton.quantidadeProduto(produto);
+        return quantidadeCategoria;
     }
 
-}
+
+    }
