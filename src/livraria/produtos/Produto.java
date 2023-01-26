@@ -1,8 +1,11 @@
 package livraria.produtos;
 
 import livraria.Utils;
+import livraria.repositorios.Estoque;
 
 public abstract class Produto {
+
+
     private Utils utils = Utils.getInstance();
     private String nome = null;
     private Integer id;

@@ -1,45 +1,54 @@
 package livraria.repositorios;
 
+import livraria.Desconto;
 import livraria.produtos.Produto;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-public class Carrinho<T extends Produto> implements IEstoque<T>{
-    private List<T> carrinho = new ArrayList<>();
+public class Carrinho<T extends Produto> extends EstoqueUtils<T> implements IEstoque<T> {
+    Map<String, List<T>> estoque = new HashMap<>();
     private Double valor = 0d;
 
-    public double calculaValorCarrinho(){
+    public void calculaValorCarrinho(){
         Double total = 0d;
-        for (T produto: carrinho) {
-            total+=produto.getPreco();
+        for(List<T> list : estoque.values()){
+            for(T produto : list){
+                total+= produto.getPreco();
+                System.out.println("SOMANDO COMPRA: "+ total);
+            }
         }
-        valor = total;
-        return valor;
+        valor = total - Desconto.aplicarDesconto(this);
     }
-    public List<T> getCarrinho() {
-        return carrinho;
-    }
-
     @Override
     public String toString() {
         return "Carrinho{" +
-                "carrinho=" + carrinho +
+                "carrinho=" + estoque +
                 ", \nvalor=" + valor +
                 '}';
     }
 
     @Override
     public boolean adicionar(T produto) {
-        this.carrinho.add(produto);
-        calculaValorCarrinho();
+            if (containsCategoria(produto)) {
+                estoque.get(produto.getCategoria()).add(produto);
+                calculaValorCarrinho();
+            } else {
+                estoque.put(produto.getCategoria(), new ArrayList<>() {{
+                    add(produto);
+                    calculaValorCarrinho();
+                }});
+            }
         return false;
     }
 
+
     @Override
     public boolean remover(T produto) {
-        if(containsProduto(produto)){
-            this.carrinho.remove(produto);
+        if (containsCategoria(produto) && containsProduto(produto)) {
+            estoque.get(produto.getCategoria()).remove(produto);
             calculaValorCarrinho();
             return true;
         }
@@ -48,24 +57,31 @@ public class Carrinho<T extends Produto> implements IEstoque<T>{
 
     @Override
     public boolean ver(T produto) {
-        if(containsProduto(produto)){
-            System.out.println(produto);
-            return true;
+        if (containsCategoria(produto) && containsProduto(produto)) {
+            System.out.println(getProduto(produto));
+        } else {
+            System.out.println("Produto não encontrado");
         }
         return false;
     }
 
     @Override
     public boolean alterar(T produtoAtual, T produtoNovo) {
-        if(containsProduto(produtoAtual)){
-            carrinho.set(carrinho.indexOf(produtoAtual),produtoNovo);
+        if (containsCategoria(produtoAtual) && containsProduto(produtoAtual) && (containsCategoria(produtoAtual) == containsCategoria(produtoNovo))) {
+            List<T> produtos = estoque.get(produtoAtual.getCategoria());
+            produtos.set(produtos.indexOf(produtoAtual), produtoNovo);
+            estoque.put(produtoAtual.getCategoria(), produtos);
+            calculaValorCarrinho();
             return true;
         }
         return false;
     }
-
     @Override
-    public boolean containsProduto(T produto) {
-        return carrinho.contains(produto);
+    public Map<String, List<T>> getEstoque() {
+        return this.estoque;
+    }
+
+    public Double getValor() {
+        return valor;
     }
 }

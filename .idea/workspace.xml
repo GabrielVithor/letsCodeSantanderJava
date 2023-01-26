@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1289c94-4d17-4ba6-934b-37a91d9872b3" name="Changes" comment="livraria 2.0">
-      <change afterPath="$PROJECT_DIR$/src/livraria/repositorios/Almoxarifado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/repositorios/Carrinho.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/repositorios/Estoque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livraria/repositorios/IEstoque.java" afterDir="false" />
+    <list default="true" id="c1289c94-4d17-4ba6-934b-37a91d9872b3" name="Changes" comment="livraria 2.1">
+      <change afterPath="$PROJECT_DIR$/src/livraria/repositorios/EstoqueUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/Caixa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Caixa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/Desconto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Desconto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/Estoquista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Estoquista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/livraria/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Sistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/estoque/Carrinho.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/estoque/Estoque.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/estoque/EstoqueGeral.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/estoque/IEstoque.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/livraria/todo" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/todo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/produtos/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/produtos/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/repositorios/Almoxarifado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/repositorios/Carrinho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/repositorios/Carrinho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/repositorios/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/repositorios/Estoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/livraria/repositorios/IEstoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/livraria/repositorios/IEstoque.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -47,14 +44,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/workspace/Java DIO/introducao-ao-java/JAVA DIO/src/collectionsFrameworks"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspace/letsCode/javaOrientadoObjeto2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Sistema">
     <configuration name="Sistema (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="livraria.Sistema" />
@@ -163,7 +160,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Sistema" />
-        <item itemvalue="Application.Sistema (4)" />
         <item itemvalue="Application.Sistema (3)" />
         <item itemvalue="Application.Sistema (2)" />
         <item itemvalue="Application.Sistema (1)" />
@@ -228,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674267695447</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="livraria 2.1">
+      <created>1674340017272</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674340017272</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,7 +252,8 @@
     <MESSAGE value="livraria 1.0" />
     <MESSAGE value="livraria 1.1" />
     <MESSAGE value="livraria 2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="livraria 2.0" />
+    <MESSAGE value="livraria 2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="livraria 2.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -259,6 +263,10 @@
           <line>63</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

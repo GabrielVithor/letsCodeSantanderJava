@@ -1,6 +1,5 @@
 package livraria;
 
-import livraria.repositorios.Estoque;
 import livraria.produtos.*;
 
 import java.time.LocalDate;
@@ -17,31 +16,22 @@ public class Sistema<T extends Produto> {
                 "Hillsong",
                 "Gospel",
                 "Ouro");
+
         AlbunsMusica albunsMusica2 = new AlbunsMusica("Lets get started",
                 10.00d,
                 "The black eyed peas",
                 "Pop",
                 "Ouro");
 
-        Estoque<AlbunsMusica> albunsMusicaEstoque = new Estoque<>();
-        albunsMusicaEstoque.adicionar(albunsMusica);
-
-
         Jogo jogo = new Jogo("COD",
                 20d,
                 "Blizzard",
                 "FPS",
                 "Actvision");
-        Estoque<Jogo> jogosEstoque = new Estoque<>() {{
-            adicionar(jogo);
-        }};
 
         Brinquedos brinquedos = new Brinquedos("Hot weels",
                 5d,
                 "Carrinho");
-        Estoque<Brinquedos> brinquedosEstoque = new Estoque<>() {{
-            adicionar(brinquedos);
-        }};
 
 
         Filmes filmes = new Filmes(
@@ -52,46 +42,45 @@ public class Sistema<T extends Produto> {
                 "Drama",
                 "HBO"
         );
-        Estoque<Filmes> filmesEstoque = new Estoque<>() {{
-            adicionar(filmes);
-        }};
+
         Livro livro = new Livro(
                 "O assassinato de Roger Arckroid",
-                40.5,
+                100d,
                 "Romance Policial",
                 "Agatha Christie",
                 "L & PM"
         );
-        Estoque<Livro> livroEstoque = new Estoque<>() {{
-            adicionar(livro);
-        }};
+
 
         Livro livro2 = new Livro(
                 "O assassinato de Roger Arckroid",
-                60d,
+                100d,
                 "Romance Policial",
                 "Agatha Christie",
                 "Best Bolso"
         );
-        Estoque<Livro> livroEstoque1 = new Estoque<>() {
-            {
-                adicionar(livro2);
-            }
-        };
+
 
         Cliente cliente = new Cliente("Gabriel",
                 "123456789",
                 "1234567900",
                 LocalDate.of(1999,01,26));
 
-        listarProdutosPorCategoria(Produtos.Livro);
+        verificarEstoque().adicionar(livro);
+        verificarEstoque().adicionar(livro2);
+        verificarEstoque().adicionar(albunsMusica);
+        verificarEstoque().adicionar(albunsMusica2);
+        verificarEstoque().adicionar(brinquedos);
+        verificarEstoque().adicionar(jogo);
+        verificarEstoque().adicionar(filmes);
+        verificarEstoque().adicionar(brinquedos);
+
         cliente.selecionarProduto(livro);
+        cliente.selecionarProduto(livro2);
         cliente.selecionarProduto(albunsMusica);
         cliente.selecionarProduto(albunsMusica2);
         listarProdutosPorCategoria(Produtos.Livro);
         cliente.mostrarCarrinho();
-        cliente.cancelarProduto(livro);
-        cliente.cancelarProduto(livro);
         listarProdutosPorCategoria(Produtos.Livro);
 
         caixa.mostrarCaixa();
